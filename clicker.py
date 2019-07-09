@@ -19,15 +19,15 @@ def click_gc_loop():
         else:
             pyautogui.click(big_cookie)
             if (time.time() - last_gc) > 135:
-                gc = pyautogui.locateOnScreen('gc2.png', confidence=0.93)
+                gc = pyautogui.locateOnScreen('images/gc2.png', confidence=0.93)
                 if gc is not None:
                     pyautogui.click(pyautogui.center(gc))
                     time.sleep(1)
                     last_gc = time.time()
             if (time.time() - last_fhf) > 1620:
                 pyautogui.click(fhf_dn)
-                time.sleep(4.5)
-                gc_fhf = pyautogui.locateOnScreen('gc2.png', confidence=0.9)
+                time.sleep(4)
+                gc_fhf = pyautogui.locateOnScreen('images/gc2.png', confidence=0.9)
                 if gc_fhf is not None:
                     pyautogui.click(pyautogui.center(gc_fhf))
                 last_fhf = time.time()

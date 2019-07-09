@@ -1,8 +1,9 @@
 import pyautogui
 import time
+import keyboard
 
-time.sleep(3)
-
+pyautogui.PAUSE = 1
+pyautogui.FAILSAFE = True
 
 bakers_wheat = 'images/bakers_wheat.png'
 thumbcorn = 'images/thumbcorn.png'
@@ -40,7 +41,7 @@ everdaisy = 0
 ichorpuff = 'images/ichorpuff.png'
 
 
-def get_locals():
+def get_coords():
     print(pyautogui.locateOnScreen(bakers_wheat, confidence=0.93))
     print(pyautogui.locateOnScreen(thumbcorn, confidence=0.93))
     print(pyautogui.locateOnScreen(cronerice, confidence=0.93))
@@ -71,3 +72,24 @@ def get_locals():
     print(pyautogui.locateOnScreen(shriekbulb, confidence=0.93))
     print(pyautogui.locateOnScreen(tidygrass, confidence=0.93))
     print(pyautogui.locateOnScreen(ichorpuff, confidence=0.93))
+
+
+garden_coords = [(780, 309), (820, 308), (859, 308), (899, 308), (940, 308), (979, 308),
+                 (780, 351), (820, 353), (859, 353), (899, 351), (940, 354), (979, 352),
+                 (780, 383), (820, 385), (859, 385), (899, 385), (940, 385), (979, 384),
+                 (780, 433), (820, 433), (859, 432), (899, 433), (940, 434), (979, 434),
+                 (780, 467), (820, 467), (859, 469), (899, 469), (940, 467), (979, 468),
+                 (780, 512), (820, 512), (859, 512), (899, 511), (940, 513), (979, 513)]
+
+
+while True:
+    if keyboard.is_pressed('f2'):
+        # (x, y) = garden_coords.append(pyautogui.position())
+        x, y = pyautogui.position()
+        coords = (x, y)
+        garden_coords.append(coords)
+        time.sleep(0.5)
+    elif keyboard.is_pressed('f3'):
+        break
+
+print(garden_coords)
