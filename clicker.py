@@ -22,7 +22,7 @@ def click_gc_loop():
                 gc = pyautogui.locateOnScreen('images/gc2.png', confidence=0.93)
                 if gc is not None:
                     pyautogui.click(pyautogui.center(gc))
-                    time.sleep(1)
+                    time.sleep(1.1)
                     last_gc = time.time()
             if (time.time() - last_fhf) > 1620:
                 pyautogui.click(fhf_dn)

@@ -1,7 +1,7 @@
 import pyautogui
 import time
 
-time.sleep(3)
+time.sleep(2)
 
 
 bakers_wheat = 'images/bakers_wheat.png'
@@ -71,3 +71,13 @@ def get_locals():
     print(pyautogui.locateOnScreen(shriekbulb, confidence=0.93))
     print(pyautogui.locateOnScreen(tidygrass, confidence=0.93))
     print(pyautogui.locateOnScreen(ichorpuff, confidence=0.93))
+
+
+std_coords_plant_1 = [(820, 308), (940, 308), (820, 384), (940, 433), (820, 512), (940, 512)]
+std_coords_plant_2 = [(820, 352), (940, 352), (820, 468), (940, 468)]
+same_plant_coords =  [(820, 308), (940, 308), (820, 352), (940, 352), (820, 384), (940, 384),
+                      (820, 468), (940, 468), (820, 512), (940, 512)]
+
+for element in same_plant_coords:
+    pyautogui.click(element)
+    time.sleep(0.5)
