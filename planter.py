@@ -1,44 +1,43 @@
 import pyautogui
 import time
-import keyboard
 
 pyautogui.PAUSE = 0.2
 pyautogui.FAILSAFE = True
 
-bakers_wheat = 'images/bakers_wheat.png'
-thumbcorn = 'images/thumbcorn.png'
-cronerice = 'images/cronerice.png'
-gildmillet = 'images/gildmillet.png'
-ordinary_clover = 'images/ordinary_clover.png'
+bakers_wheat = 'C:/Users/Felipe/PycharmProjects/auto_click/images/bakers_wheat.png'
+thumbcorn = 'C:/Users/Felipe/PycharmProjects/auto_click/images/thumbcorn.png'
+cronerice = 'C:/Users/Felipe/PycharmProjects/auto_click/images/cronerice.png'
+gildmillet = 'C:/Users/Felipe/PycharmProjects/auto_click/images/gildmillet.png'
+ordinary_clover = 'C:/Users/Felipe/PycharmProjects/auto_click/images/ordinary_clover.png'
 golden_clover = 0
-shimmerlily = 'images/shimmerlily.png'
-elderwort = 'images/elderwort.png'
-bakeberry = 'images/bakeberry.png'
-chocoroot = 'images/chocoroot.png'
-white_chocoroot = 'images/white_chocoroot.png'
-white_mildew = 'images/white_mildew.png'
-brown_mold = 'images/brown_mold.png'
-meddleweed = 'images/meddleweed.png'
-whiskerbloom = 'images/whiskerbloom.png'
-chimerose = 'images/chimerose.png'
-nursetulip = 'images/nursetulip.png'
-drowsyfern = 'images/drowsyfern.png'
-wardlichen = 'images/wardlichen.png'
-keenmoss = 'images/keenmoss.png'
-queenbeat = 'images/queenbeat.png'
+shimmerlily = 'C:/Users/Felipe/PycharmProjects/auto_click/images/shimmerlily.png'
+elderwort = 'C:/Users/Felipe/PycharmProjects/auto_click/images/elderwort.png'
+bakeberry = 'C:/Users/Felipe/PycharmProjects/auto_click/images/bakeberry.png'
+chocoroot = 'C:/Users/Felipe/PycharmProjects/auto_click/images/chocoroot.png'
+white_chocoroot = 'C:/Users/Felipe/PycharmProjects/auto_click/images/white_chocoroot.png'
+white_mildew = 'C:/Users/Felipe/PycharmProjects/auto_click/images/white_mildew.png'
+brown_mold = 'C:/Users/Felipe/PycharmProjects/auto_click/images/brown_mold.png'
+meddleweed = 'C:/Users/Felipe/PycharmProjects/auto_click/images/meddleweed.png'
+whiskerbloom = 'C:/Users/Felipe/PycharmProjects/auto_click/images/whiskerbloom.png'
+chimerose = 'C:/Users/Felipe/PycharmProjects/auto_click/images/chimerose.png'
+nursetulip = 'C:/Users/Felipe/PycharmProjects/auto_click/images/nursetulip.png'
+drowsyfern = 'C:/Users/Felipe/PycharmProjects/auto_click/images/drowsyfern.png'
+wardlichen = 'C:/Users/Felipe/PycharmProjects/auto_click/images/wardlichen.png'
+keenmoss = 'C:/Users/Felipe/PycharmProjects/auto_click/images/keenmoss.png'
+queenbeat = 'C:/Users/Felipe/PycharmProjects/auto_click/images/queenbeat.png'
 juicy_queenbeat = 0
 duketater = 0
-crumbspore = 'images/crumbspore.png'
-doughshroom = 'images/doughshroom.png'
-glovemorel = 'images/glovemorel.png'
-cheapcap = 'images/cheapcap.png'
-fools_bolete = 'images/fools_bolete.png'
-wrinklegill = 'images/wrinklegill.png'
-green_rot = 'images/green_rot.png'
-shriekbulb = 'images/shriekbulb.png'
-tidygrass = 'images/tidygrass.png'
+crumbspore = 'C:/Users/Felipe/PycharmProjects/auto_click/images/crumbspore.png'
+doughshroom = 'C:/Users/Felipe/PycharmProjects/auto_click/images/doughshroom.png'
+glovemorel = 'C:/Users/Felipe/PycharmProjects/auto_click/images/glovemorel.png'
+cheapcap = 'C:/Users/Felipe/PycharmProjects/auto_click/images/cheapcap.png'
+fools_bolete = 'C:/Users/Felipe/PycharmProjects/auto_click/images/fools_bolete.png'
+wrinklegill = 'C:/Users/Felipe/PycharmProjects/auto_click/images/wrinklegill.png'
+green_rot = 'C:/Users/Felipe/PycharmProjects/auto_click/images/green_rot.png'
+shriekbulb = 'C:/Users/Felipe/PycharmProjects/auto_click/images/shriekbulb.png'
+tidygrass = 'C:/Users/Felipe/PycharmProjects/auto_click/images/tidygrass.png'
 everdaisy = 0
-ichorpuff = 'images/ichorpuff.png'
+ichorpuff = 'C:/Users/Felipe/PycharmProjects/auto_click/images/ichorpuff.png'
 
 
 def get_coords():
