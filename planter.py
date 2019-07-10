@@ -107,6 +107,7 @@ everdaisy_coords_plant_2 = [(780, 384), (820, 384), (860, 384), (900, 384), (940
 
 
 def try_thumbcorn():
+    pyautogui.hotkey('altleft', 'tab')
     time.sleep(0.5)
     pyautogui.click(get_center_pos(bakers_wheat))
     pyautogui.keyDown('shift')
@@ -114,9 +115,11 @@ def try_thumbcorn():
     for coord in same_plant_coords:
         pyautogui.click(coord)
     pyautogui.keyUp('shift')
+    pyautogui.press('esc', 1)
 
 
 def try_cronerice():
+    pyautogui.hotkey('altleft', 'tab')
     time.sleep(0.5)
     pyautogui.click(get_center_pos(bakers_wheat))
     pyautogui.keyDown('shift')
@@ -131,9 +134,11 @@ def try_cronerice():
     for coord in std_coords_plant_2:
         pyautogui.click(coord)
     pyautogui.keyUp('shift')
+    pyautogui.press('esc', 1)
 
 
 def try_shimmerlily():
+    pyautogui.hotkey('altleft', 'tab')
     time.sleep(0.5)
     pyautogui.click(get_center_pos(ordinary_clover))
     pyautogui.keyDown('shift')
@@ -148,9 +153,11 @@ def try_shimmerlily():
     for coord in std_coords_plant_2:
         pyautogui.click(coord)
     pyautogui.keyUp('shift')
+    pyautogui.press('esc', 1)
 
 
 def try_bakeberry():
+    pyautogui.hotkey('altleft', 'tab')
     time.sleep(0.5)
     pyautogui.click(get_center_pos(bakers_wheat))
     pyautogui.keyDown('shift')
@@ -158,9 +165,11 @@ def try_bakeberry():
     for coord in same_plant_coords:
         pyautogui.click(coord)
     pyautogui.keyUp('shift')
+    pyautogui.press('esc', 1)
 
 
 def try_chocoroot():
+    pyautogui.hotkey('altleft', 'tab')
     time.sleep(0.5)
     pyautogui.click(get_center_pos(bakers_wheat))
     pyautogui.keyDown('shift')
@@ -175,9 +184,11 @@ def try_chocoroot():
     for coord in std_coords_plant_2:
         pyautogui.click(coord)
     pyautogui.keyUp('shift')
+    pyautogui.press('esc', 1)
 
 
 def try_white_chocoroot():
+    pyautogui.hotkey('altleft', 'tab')
     time.sleep(0.5)
     pyautogui.click(get_center_pos(white_mildew))
     pyautogui.keyDown('shift')
@@ -193,9 +204,11 @@ def try_white_chocoroot():
     for coord in std_coords_plant_2:
         pyautogui.click(coord)
     pyautogui.keyUp('shift')
+    pyautogui.press('esc', 1)
 
 
 def try_whiskerbloom():
+    pyautogui.hotkey('altleft', 'tab')
     time.sleep(0.5)
     pyautogui.click(get_center_pos(shimmerlily))
     pyautogui.keyDown('shift')
@@ -210,9 +223,11 @@ def try_whiskerbloom():
     for coord in std_coords_plant_2:
         pyautogui.click(coord)
     pyautogui.keyUp('shift')
+    pyautogui.press('esc', 1)
 
 
 def try_nursetulip():
+    pyautogui.hotkey('altleft', 'tab')
     time.sleep(0.5)
     pyautogui.click(get_center_pos(whiskerbloom))
     pyautogui.keyDown('shift')
@@ -220,9 +235,11 @@ def try_nursetulip():
     for coord in same_plant_coords:
         pyautogui.click(coord)
     pyautogui.keyUp('shift')
+    pyautogui.press('esc', 1)
 
 
 def try_drowsyfern():
+    pyautogui.hotkey('altleft', 'tab')
     time.sleep(0.5)
     pyautogui.click(get_center_pos(chocoroot))
     pyautogui.keyDown('shift')
@@ -237,9 +254,11 @@ def try_drowsyfern():
     for coord in std_coords_plant_2:
         pyautogui.click(coord)
     pyautogui.keyUp('shift')
+    pyautogui.press('esc', 1)
 
 
 def try_keenmoss():
+    pyautogui.hotkey('altleft', 'tab')
     time.sleep(0.5)
     pyautogui.click(get_center_pos(brown_mold))
     pyautogui.keyDown('shift')
@@ -254,9 +273,11 @@ def try_keenmoss():
     for coord in std_coords_plant_2:
         pyautogui.click(coord)
     pyautogui.keyUp('shift')
+    pyautogui.press('esc', 1)
 
 
 def try_juicy_queenbeat():
+    pyautogui.hotkey('altleft', 'tab')
     time.sleep(0.5)
     pyautogui.click(get_center_pos(queenbeat))
     pyautogui.keyDown('shift')
@@ -264,9 +285,11 @@ def try_juicy_queenbeat():
     for coord in juicy_coords:
         pyautogui.click(coord)
     pyautogui.keyUp('shift')
+    pyautogui.press('esc', 1)
 
 
 def try_tidygrass():
+    pyautogui.hotkey('altleft', 'tab')
     time.sleep(0.5)
     pyautogui.click(get_center_pos(bakers_wheat))
     pyautogui.keyDown('shift')
@@ -281,9 +304,11 @@ def try_tidygrass():
     for coord in std_coords_plant_2:
         pyautogui.click(coord)
     pyautogui.keyUp('shift')
+    pyautogui.press('esc', 1)
 
 
 def try_everdaisy():
+    pyautogui.hotkey('altleft', 'tab')
     time.sleep(0.5)
     pyautogui.click(get_center_pos(elderwort))
     pyautogui.keyDown('shift')
@@ -298,4 +323,4 @@ def try_everdaisy():
     for coord in everdaisy_coords_plant_2:
         pyautogui.click(coord)
     pyautogui.keyUp('shift')
-
+    pyautogui.press('esc', 1)

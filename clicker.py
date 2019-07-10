@@ -1,3 +1,4 @@
+import sys; sys.stderr = open("errlog.txt", "w")
 import pyautogui
 import time
 import keyboard
@@ -19,7 +20,7 @@ def click_gc_loop():
         else:
             pyautogui.click(big_cookie)
             if (time.time() - last_gc) > 135:
-                gc = pyautogui.locateOnScreen('images/gc2.png', confidence=0.93)
+                gc = pyautogui.locateOnScreen('C:/Users/Felipe/PycharmProjects/auto_click/images/gc2.png', confidence=0.93)
                 if gc is not None:
                     pyautogui.click(pyautogui.center(gc))
                     time.sleep(1.1)
@@ -27,7 +28,7 @@ def click_gc_loop():
             if (time.time() - last_fhf) > 1620:
                 pyautogui.click(fhf_dn)
                 time.sleep(4)
-                gc_fhf = pyautogui.locateOnScreen('images/gc2.png', confidence=0.9)
+                gc_fhf = pyautogui.locateOnScreen('C:/Users/Felipe/PycharmProjects/auto_click/images/gc2.png', confidence=0.9)
                 if gc_fhf is not None:
                     pyautogui.click(pyautogui.center(gc_fhf))
                 last_fhf = time.time()
@@ -48,5 +49,5 @@ def main_loop():
         elif keyboard.is_pressed('ctrl+f2'):
             click_gc_loop()
 
-
-main_loop()
+while True:
+    main_loop()
